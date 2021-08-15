@@ -56,7 +56,8 @@ This list is intended as an end-goal for any organization.  With combined effort
     - [ ] Require maintainer / owner / peer(s) to approve before being allowed to merge
     - [ ] Make squashing code from Merge Requests mandatory to keep a clean git history in your master branch and remove “merge commits”.
 - [ ] Service deployments are using zero-downtime mechanism such as Blue/Green or Canary
-- [ ] Using the best tool for the job, for each individual concern is often better than trying to use one tool for every job (eg: Ansible or Bash fanatics that use it for literally everything).  Try to have no tools with overlapping responsibilities.
+- [ ] Using the best tool for the job, for each individual concern is often better than trying to use one tool for every job (eg: Ansible or Bash fanatics that use it for literally everything).
+- [ ] Having NO (or minimal) tools with overlapping responsibilities. (Eg: Not having more than one CI system, more than one SCM, more than one Cloud Provider (unless HA dictates it), not more than one automation tool, testing tool, deployment tool, monitoring tool, etc).
 - [ ] Every aspect of an environment has resiliency, redundancy, health checks, monitoring, alerting, auto-healing capabilities and backups from day one.
 - [ ] Deploys are painless, single-click or fully automated, no humans are involved and no human error is possible.  Removing access from humans to even be able to deploy (besides clicking the deploy button)
 - [ ] Rollbacks are painless, single-click or fully automated.  Is well-documented if necessary and recommend testing/validating these function before going live with any new service.
